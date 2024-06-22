@@ -2,11 +2,35 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Algoritmos Game - Ajuda</title>
+    <link rel="stylesheet" href="css/final.css">
+    <link rel="shortcut icon" href="imagens/globo-terrestre.png" type="image/x-icon">
+    <title>History Quiz - Ajuda</title>
 </head>
 <body>
-    
+    <h1>Ajuda</h1>
+
+    <p>São 10 perguntas com 4 alternativas cada uma. Acerte a pergunta e avance para a próxima pergunta, porém se errar você volta para o começo.</p>
+    <img src="" alt="">
+
+    <ul>
+        <button onclick="playButtonClick()">Jogar</button>
+        <button onclick="infoButtonClick()">Informações</button>
+        <button onclick="menuButtonClick()">Menu</button>
+    </ul>
+
+    <script>
+        function playButtonClick() {
+            window.location.replace('perguntas/pergunta1.html');
+        }
+
+        function infoButtonClick() {
+            window.location.replace('info.html');
+        }
+
+        function menuButtonClick() {
+            window.location.replace('index.html');
+        }
+    </script>
 </body>
 </html>

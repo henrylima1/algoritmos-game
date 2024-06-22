@@ -10,13 +10,13 @@ h1 {
     color: white;
     text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
     text-align: center;
-    font-size: 70px;
+    font-size: 40px;
     font-family: "Lilita One", sans-serif;
 }
 
 main {
     margin-top: 60px;
-    height: 98vh;
+    height: 65vh;
     display: flex;
     justify-content: center;
 }
@@ -26,7 +26,7 @@ main ul {
     flex-direction: column;
 }
 
-main ul a {
+main ul button {
     margin-top: 20px;
     background-color: #8D86C9;
     padding: 30px;
@@ -39,4 +39,10 @@ main ul a {
     font-size: 20px;
     text-decoration: none;
     color: white;
+}
+
+main ul button:hover {
+    background-color: #9067C6;
+    transition: .3s ease-in;
+    cursor: pointer;
 }

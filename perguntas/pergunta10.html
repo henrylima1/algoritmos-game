@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/perguntas.css">
+    <link rel="shortcut icon" href="../imagens/globo-terrestre.png" type="image/x-icon">
+    <title>History Quiz - Pergunta 10</title>
+</head>
+<body>
+    <h1>10. Apesar de ser chamada Guerra dos Cem Anos quanto tempo essa guerra realmente durou?</h1>
+    
+    <main>
+        <ul>
+            <button id="a" onclick="rightGuess()">116</button>
+            <button id="b">110</button>
+            <button id="c">111</button>
+            <button id="d">101</button>
+        </ul>
+    </main>
+
+    <script>
+        function rightGuess() {
+            window.location.href = "../final.html"; // Substitua pelo caminho para a página de resultado
+        }
+
+        function wrongGuess() {
+            window.location.href = "../erro.html"; // Substitua pelo caminho para a página de resultado
+        }
+
+        // Adicione listeners para as respostas erradas
+        document.getElementById('b').addEventListener('click', wrongGuess);
+        document.getElementById('c').addEventListener('click', wrongGuess);
+        document.getElementById('d').addEventListener('click', wrongGuess);
+    </script>
+</body>
+</html>

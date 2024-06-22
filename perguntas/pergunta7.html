@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/perguntas.css">
+    <link rel="shortcut icon" href="../imagens/globo-terrestre.png" type="image/x-icon">
+    <title>History Quiz - Pergunta 7</title>
+</head>
+<body>
+    <h1>7. Que cidade asiática fala Português?</h1>
+    
+    <main>
+        <ul>
+            <button id="a">Beijing (Pequim)</button>
+            <button id="b">Shangai</button>
+            <button id="c" onclick="rightGuess()">Hong Kong</button>
+            <button id="d">Kuala Lumpur</button>
+        </ul>
+    </main>
+
+    <script>
+        function rightGuess() {
+            window.location.href = "pergunta8.html"; // Substitua pelo caminho para a página de resultado
+        }
+
+        function wrongGuess() {
+            window.location.href = "../erro.html"; // Substitua pelo caminho para a página de resultado
+        }
+
+        // Adicione listeners para as respostas erradas
+        document.getElementById('a').addEventListener('click', wrongGuess);
+        document.getElementById('b').addEventListener('click', wrongGuess);
+        document.getElementById('d').addEventListener('click', wrongGuess);
+    </script>
+</body>
+</html>

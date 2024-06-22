@@ -5,17 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
-    <title>Algoritmos Quiz</title>
+    <link rel="shortcut icon" href="imagens/globo-terrestre.png" type="image/x-icon">
+    <title>History Quiz</title>
 </head>
 <body>
     <main>
-        <h1>Algoritmos Game</h1>
+        <h1>History Quiz</h1>
 
         <ul>
-            <li><a id="inicio" href="pergunta1.html">Jogar</a></li>
-            <li><a id="ajuda" href="ajuda.html">Ajuda</a></li>
-            <li><a id="info" href="info.html">Informações</a></li>
+            <li><button id="play" onclick="playButtonClick()">Jogar</button></li>
+            <li><button id="help" onclick="helpButtonClick()">Ajuda</button></li>
+            <li><button id="info" onclick="infoButtonClick()">Informações</button></li>
         </ul>
     </main>
+
+    <script>
+        let playButton = document.getElementById('play');
+        let helpButton = document.getElementById('help');
+        let infoButton = document.getElementById('info');
+
+        function playButtonClick() {
+            window.location.replace('perguntas/pergunta1.html');
+        }
+
+        function helpButtonClick() {
+            window.location.replace('ajuda.html');
+        }
+
+        function infoButtonClick() {
+            window.location.replace('info.html');
+        }
+    </script>
 </body>
 </html>

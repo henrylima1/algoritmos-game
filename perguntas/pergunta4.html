@@ -5,18 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/perguntas.css">
-    <title>Algoritmos Game - Pergunta 2</title>
+    <link rel="shortcut icon" href="../imagens/globo-terrestre.png" type="image/x-icon">
+    <title>History Quiz - Pergunta 4</title>
 </head>
 <body>
-    <h1>4. Onde nasceu Adolf Hitler?</h1>
+    <h1>4. Em que país nasceu Adolf Hitler?</h1>
     
     <main>
         <ul>
-            <a id="a" href="">Alemanha</a>
-            <a id="b" href="">Polônia</a>
-            <a id="c" href="">Áustria</a>
-            <a id="d" href="">Madagascar</a>
+            <button id="a" onclick="rightGuess()">Áustria</button>
+            <button id="b">Alemanha</button>
+            <button id="c">Suíça</button>
+            <button id="d">Hungria</button>
         </ul>
     </main>
+
+    <script>
+        function rightGuess() {
+            window.location.href = "pergunta5.html"; // Substitua pelo caminho para a página de resultado
+        }
+
+        function wrongGuess() {
+            window.location.href = "../erro.html"; // Substitua pelo caminho para a página de resultado
+        }
+
+        // Adicione listeners para as respostas erradas
+        document.getElementById('b').addEventListener('click', wrongGuess);
+        document.getElementById('c').addEventListener('click', wrongGuess);
+        document.getElementById('d').addEventListener('click', wrongGuess);
+    </script>
 </body>
 </html>

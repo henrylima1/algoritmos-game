@@ -5,18 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/perguntas.css">
-    <title>Algoritmos Game - Pergunta 1</title>
+    <link rel="shortcut icon" href="../imagens/globo-terrestre.png" type="image/x-icon">
+    <title>History Quiz - Pergunta 1</title>
 </head>
 <body>
     <h1>1. Em que ano o Brasil foi descoberto? </h1>
     
     <main>
         <ul>
-            <a id="a" href="">1500</a>
-            <a id="b" href="">1600</a>
-            <a id="c" href="">1550</a>
-            <a id="d" href="">1450</a>
+            <button id="a" onclick="rightGuess()">1500</button>
+            <button id="b">1600</button>
+            <button id="c">1550</button>
+            <button id="d">1450</button>
         </ul>
     </main>
+
+    <script>
+        function rightGuess() {
+            window.location.href = "pergunta2.html"; // Substitua pelo caminho para a próxima pergunta
+        }
+
+        function wrongGuess() {
+            window.location.href = "../erro.html"; // Substitua pelo caminho para a página de erro
+        }
+
+        document.getElementById('b').addEventListener('click', wrongGuess);
+        document.getElementById('c').addEventListener('click', wrongGuess);
+        document.getElementById('d').addEventListener('click', wrongGuess);
+    </script>
 </body>
 </html>

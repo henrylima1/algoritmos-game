@@ -5,18 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/perguntas.css">
-    <title>Algoritmos Game - Pergunta 2</title>
+    <link rel="shortcut icon" href="../imagens/globo-terrestre.png" type="image/x-icon">
+    <title>History Quiz - Pergunta 3</title>
 </head>
 <body>
-    <h1>3. Em que ano nasceu Mário Quintana? </h1>
+    <h1 style="font-size: 40px;">3. Em que ano terminou a Primeira Guerra Mundial?</h1>
     
     <main>
         <ul>
-            <a id="a" href="">1906</a>
-            <a id="b" href="">1978</a>
-            <a id="c" href="">1899</a>
-            <a id="d" href="">1903</a>
+            <button id="a" onclick="rightGuess()">1918</button>
+            <button id="b">1914</button>
+            <button id="c">1920</button>
+            <button id="d">1916</button>
         </ul>
     </main>
+
+    <script>
+        function rightGuess() {
+            window.location.href = "pergunta4.html"; // Substitua pelo caminho para a próxima pergunta
+        }
+
+        function wrongGuess() {
+            window.location.href = "../erro.html"; // Substitua pelo caminho para a página de erro
+        }
+
+        // Adicione listeners para as respostas erradas
+        document.getElementById('b').addEventListener('click', wrongGuess);
+        document.getElementById('c').addEventListener('click', wrongGuess);
+        document.getElementById('d').addEventListener('click', wrongGuess);
+    </script>
 </body>
 </html>

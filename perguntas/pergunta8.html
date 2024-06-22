@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/perguntas.css">
+    <link rel="shortcut icon" href="../imagens/globo-terrestre.png" type="image/x-icon">
+    <title>History Quiz - Pergunta 8</title>
+</head>
+<body>
+    <h1>8. Qual foi o tratado que dividiu o mundo entre dois países?</h1>
+    
+    <main>
+        <ul>
+            <button id="a">Tratado de Versalhes</button>
+            <button id="b">Tratado de Paris (1783)</button>
+            <button id="c">Tratado de Paz de Westfália</button>
+            <button id="d" onclick="rightGuess()">Tratado de Tordesilhas</button>
+        </ul>
+    </main>
+
+    <script>
+        function rightGuess() {
+            window.location.href = "pergunta9.html"; // Substitua pelo caminho para a página de resultado
+        }
+
+        function wrongGuess() {
+            window.location.href = "../erro.html"; // Substitua pelo caminho para a página de resultado
+        }
+
+        // Adicione listeners para as respostas erradas
+        document.getElementById('a').addEventListener('click', wrongGuess);
+        document.getElementById('b').addEventListener('click', wrongGuess);
+        document.getElementById('c').addEventListener('click', wrongGuess);
+    </script>
+</body>
+</html>
