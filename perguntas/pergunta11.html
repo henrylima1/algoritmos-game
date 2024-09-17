@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/perguntas.css">
     <link rel="shortcut icon" href="../imagens/globo-terrestre.png" type="image/x-icon">
-    <title>History Quiz - Pergunta 7</title>
+    <title>History Quiz - Pergunta 8</title>
 </head>
 <body>
-    <h1>7. Em que país fica a famosa cidade de Machu Picchu?</h1>
+    <h1>11. Qual é a capital da Austrália?</h1>
     
     <main>
         <ul>
-            <button id="a">México</button>
-            <button id="b">Bolívia</button>
-            <button id="c" onclick="rightGuess()">Peru</button>
-            <button id="d">Equador</button>
+            <button id="a">Sydney</button>
+            <button id="b">Melbourne</button>
+            <button id="c">Brisbane</button>
+            <button id="d" onclick="rightGuess()">Canberra</button>
         </ul>
     </main>
 
     <script>
         function rightGuess() {
-            window.location.href = "pergunta8.html"; // Substitua pelo caminho para a página de resultado
+            window.location.href = "pergunta9.html"; // Substitua pelo caminho para a página de resultado
         }
 
         function wrongGuess() {
@@ -32,7 +32,7 @@
         // Adicione listeners para as respostas erradas
         document.getElementById('a').addEventListener('click', wrongGuess);
         document.getElementById('b').addEventListener('click', wrongGuess);
-        document.getElementById('d').addEventListener('click', wrongGuess);
+        document.getElementById('c').addEventListener('click', wrongGuess);
     </script>
 </body>
 </html>
