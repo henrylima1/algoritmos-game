@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/perguntas.css">
     <link rel="shortcut icon" href="../imagens/globo-terrestre.png" type="image/x-icon">
-    <title>History Quiz - Pergunta 10</title>
+    <title>History Quiz - Pergunta 19</title> <!--Título da página que aparece lá em cima-->
 </head>
 <body>
-    <h1>10. Qual é a atual capital do Brasil?</h1>
-    
+    <h1>19.	Qual animal é um símbolo da fauna australiana?</h1> <!--Pergunta-->
+
     <main>
         <ul>
-            <button id="a" onclick="rightGuess()">Brásilia</button>
-            <button id="b">São Paulo</button>
-            <button id="c">Salvador</button>
-            <button id="d">Rio de Janeiro</button>
+            <button id="a">Elefante</button> 
+            <button id="b" onclick="rightGuess()">Canguru</button>
+            <button id="c">Ouro</button>
+            <button id="d">Urso-polar</button>
         </ul>
     </main>
 
     <script>
         function rightGuess() {
-            window.location.href = "pergunta11.html"; // Substitua pelo caminho para a página de resultado
+            window.location.href = "pergunta20.html"; // Substitua pelo caminho para a página de resultado
         }
 
         function wrongGuess() {
@@ -30,7 +30,7 @@
         }
 
         // Adicione listeners para as respostas erradas
-        document.getElementById('b').addEventListener('click', wrongGuess);
+        document.getElementById('a').addEventListener('click', wrongGuess);
         document.getElementById('c').addEventListener('click', wrongGuess);
         document.getElementById('d').addEventListener('click', wrongGuess);
     </script>
