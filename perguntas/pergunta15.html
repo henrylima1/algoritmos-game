@@ -8,15 +8,19 @@
     <link rel="shortcut icon" href="../imagens/globo-terrestre.png" type="image/x-icon">
     <title>History Quiz - Pergunta 15</title> <!--Título da página que aparece lá em cima-->
 </head>
-<body>
+<body style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://live.staticflickr.com/4214/35781462551_338aa75136_b.jpg');"></body>
     <h1>15.	Qual é a principal fonte de água doce do Brasil?</h1> <!--Pergunta-->
 
     <main>
         <ul>
-            <button id="a">Oceano Atlântico</button> 
-            <button id="b">Lago de Titicaca</button>
-            <button id="c" onclick="rightGuess()">Rio Amazonas</button>
-            <button id="d">Rio São Francisco </button>
+           <div class="primeira-coluna">
+                <button id="a">Oceano Atlântico</button> 
+                <button id="b">Lago de Titicaca</button>
+           </div>
+            <div class="segunda-coluna">
+                <button id="c" onclick="rightGuess()">Rio Amazonas</button>
+                <button id="d">Rio São Francisco </button>
+            </div>
         </ul>
     </main>
 

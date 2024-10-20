@@ -8,15 +8,19 @@
     <link rel="shortcut icon" href="../imagens/globo-terrestre.png" type="image/x-icon">
     <title>History Quiz - Pergunta 11</title>
 </head>
-<body>
-    <h1>11. Qual é a capital da Austrália?</h1>
+<body style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://media.freemalaysiatoday.com/wp-content/uploads/2024/04/99a5412b-sugar-gula-sweet-envato-pic-090424.jpg');"></body>
+    <h1>11. Qual estado brasileiro produz 75% do açúcar usado na Rússia</h1>
     
     <main>
         <ul>
-            <button id="a">Sydney</button>
-            <button id="b">Melbourne</button>
-            <button id="c">Brisbane</button>
-            <button id="d" onclick="rightGuess()">Canberra</button>
+            <div class="primeira-coluna">
+                <button id="a">Pernambuco</button>
+                <button id="b" onclick="rightGuess()">Alagoas</button>
+            </div>
+            <div class="segunda-coluna">
+                <button id="c">Paraíba</button>
+                <button id="d">Rio de Janeiro</button>
+            </div>
         </ul>
     </main>
 
@@ -31,7 +35,7 @@
 
         // Adicione listeners para as respostas erradas
         document.getElementById('a').addEventListener('click', wrongGuess);
-        document.getElementById('b').addEventListener('click', wrongGuess);
+        document.getElementById('d').addEventListener('click', wrongGuess);
         document.getElementById('c').addEventListener('click', wrongGuess);
     </script>
 </body>
