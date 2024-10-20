@@ -9,28 +9,34 @@
 }
 
 body {
-    background-color: #CAC4CE;
+    background-image: url('https://images.pexels.com/photos/1098515/pexels-photo-1098515.jpeg');
+    background-position: center center;
+    background-size: cover;
     height: 90vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 main {
-    margin-top: 10vh;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.671);
 }
 
 main h1 {
     color: white;
     text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
     text-align: center;
-    font-size: 70px;
+    font-size: 100px;
     font-family: "Lilita One", sans-serif;
 }
 
 main ul li button{
-    background-color: #8D86C9;
+    background-color: #0000006e;
     display: flex;
     justify-content: center;
     padding: 30px;
@@ -39,15 +45,14 @@ main ul li button{
     border-radius: 10px;
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 35px;
     font-family: "Lilita One", sans-serif;
     text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
-    border: 1px solid #8D86C9;
-    box-shadow: 0px 1px 5px 4px rgba(0,0,0,0.75);
+    border: none;
 }
 
 main ul li button:hover {
-    background-color: #9067C6;
+    background-color: rgba(0, 0, 0, 0.623);
     transition: .3s ease-in;
     cursor: pointer;
 }
