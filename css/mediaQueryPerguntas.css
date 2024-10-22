@@ -1,0 +1,90 @@
+/* Estilos para dispositivos móveis (telas menores que 600px) */
+@media (max-width: 600px) {
+    body {
+        height: 100vh; /* Ajusta a altura do corpo para auto */
+        width: 390px;
+    }
+
+    h1 {
+        font-size: 30px; /* Reduz o tamanho do título */
+        text-align: center;
+        width: 415px;
+        margin-top: 100px; /* Adiciona uma margem superior */
+    }
+
+    main {
+        margin-top: 60px; /* Ajusta a margem superior */
+        height: auto; /* Deixa a altura do main como auto */
+        width: 100%;
+        flex-direction: column; /* Muda a direção para coluna */
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.primeira-coluna, div.segunda-coluna {
+        width: 90%; /* Aumenta a largura das colunas */
+        height: auto; /* Ajusta a altura para auto */
+        padding: 0px; /* Reduz o padding */
+    }
+
+    main ul button {
+        width: 90vw; /* Ajusta a largura dos botões */
+        height: 60px; /* Ajusta a altura dos botões */
+        font-size: 25px; /* Reduz o tamanho da fonte dos botões */
+        padding: 45px; /* Ajusta o padding dos botões */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px; /* Ajusta a margem entre os botões */
+    }
+}
+
+/* Estilos para tablets (telas de 601px a 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    h1 {
+        font-size: 36px; /* Tamanho reduzido do título */
+    }
+
+    main {
+        margin-top: 100px; /* Ajusta a margem superior */
+        flex-direction: row; /* Mantém a direção em linha */
+    }
+
+    div.primeira-coluna, div.segunda-coluna {
+        width: 45%; /* Ajusta a largura das colunas */
+        height: auto; /* Ajusta a altura para auto */
+        padding: 15px; /* Ajusta o padding */
+    }
+
+    main ul button {
+        width: 100%; /* Ajusta a largura dos botões */
+        height: 80px; /* Ajusta a altura dos botões */
+        font-size: 22px; /* Aumenta o tamanho da fonte dos botões */
+    }
+}
+
+/* Estilos para desktops (telas de 901px em diante) */
+@media (min-width: 901px) {
+    h1 {
+        font-size: 45px; /* Tamanho original do título */
+    }
+
+    main {
+        margin-top: 120px; /* Margem original */
+    }
+
+    div.primeira-coluna, div.segunda-coluna {
+        width: 300px; /* Largura original das colunas */
+        height: 300px; /* Altura original das colunas */
+    }
+
+    main ul button {
+        width: 300px; /* Largura original dos botões */
+        height: 100px; /* Altura original dos botões */
+        font-size: 25px; /* Tamanho original da fonte dos botões */
+    }
+}

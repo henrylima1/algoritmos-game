@@ -1,0 +1,59 @@
+/* Estilos para dispositivos móveis (telas menores que 600px) */
+@media (max-width: 600px) {
+   
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    
+    main {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        
+    }
+   
+    main h1 {
+        font-size: 25vw; /* Reduz o tamanho do título */
+        margin-top: 80px;
+    }
+
+    main ul li button {
+        width: 90vw; /* Aumenta a largura dos botões para ocupar quase toda a tela */
+        padding: 40px; /* Reduz o padding */
+        font-size: 40px; /* Reduz o tamanho da fonte dos botões */
+    }
+
+    img {
+        width: 30%; /* Ajusta a largura da imagem, se necessário */
+        margin-left: 0; /* Remove o margin-left da imagem */
+        display: block; /* Faz a imagem ocupar uma linha completa */
+        margin-top: 5vh; /* Adiciona um pouco de margem acima da imagem */
+    }
+}
+
+/* Estilos para tablets (telas de 601px a 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    main h1 {
+        font-size: 60px; /* Reduz o tamanho do título */
+    }
+
+    main ul li button {
+        width: 80%; /* Aumenta a largura dos botões */
+        padding: 25px; /* Ajusta o padding */
+        font-size: 30px; /* Ajusta o tamanho da fonte dos botões */
+    }
+}
+
+/* Estilos para desktops (telas de 901px em diante) */
+@media (min-width: 901px) {
+    main h1 {
+        font-size: 100px; /* Tamanho original do título */
+    }
+
+    main ul li button {
+        width: 300px; /* Largura original dos botões */
+        padding: 30px; /* Padding original */
+        font-size: 35px; /* Tamanho original da fonte dos botões */
+    }
+}
